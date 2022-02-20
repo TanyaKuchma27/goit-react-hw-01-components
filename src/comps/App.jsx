@@ -1,7 +1,7 @@
-import user from '../data/user.json';
-import stats from '../data/stats.json';
-import Profile from './Profile/Profile';
-import StatisticsList from './StatisticsList/StatisticsList';
+import user from 'data/user.json';
+import stats from 'data/stats.json';
+import Profile from 'comps/Profile/Profile';
+import Statistics from 'comps/Statistics/Statistics';
 
 export default function App() {
   return (
@@ -15,8 +15,8 @@ export default function App() {
       views={user.stats.views}
       likes={user.stats.likes}
       />
-      <StatisticsList title="Upload stats" stats={stats} />
-      <StatisticsList stats={stats} />
+      <Statistics title="Upload stats" stats={stats} />
+      <Statistics stats={stats} />
     </div>   
   );
 };
