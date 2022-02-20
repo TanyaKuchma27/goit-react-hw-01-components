@@ -1,8 +1,7 @@
 .profile {
-  border-radius: 5px;
-  border: 25px;
-  background-color: rgb(226, 232, 236);
-  width: 300px;
+  border-radius: 10px;
+  background-color: rgb(235, 242, 247);
+  width: 299px;
   margin: 10px auto;
 }
 
@@ -43,10 +42,11 @@
 }
 
 .item {
-  margin: 10px auto;
-  padding: 20px;
   display: flex;
   flex-direction: column;
+  width: 97px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   border: 1px solid #e0caca;
 }

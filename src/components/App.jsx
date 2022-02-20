@@ -1,7 +1,9 @@
-import user from './user.json';
+import user from '../data/user.json';
+import stats from '../data/stats.json';
 import Profile from './Profile/Profile';
+import StatisticsList from './StatisticsList/StatisticsList';
 
-export const App = () => {
+export default function App() {
   return (
     <div>
       <Profile
@@ -12,8 +14,9 @@ export const App = () => {
       followers={user.stats.followers}
       views={user.stats.views}
       likes={user.stats.likes}
-    />
-    </div>
-   
+      />
+      <StatisticsList title="Upload stats" stats={stats} />
+      <StatisticsList stats={stats} />
+    </div>   
   );
 };
