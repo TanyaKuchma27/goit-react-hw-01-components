@@ -1,0 +1,23 @@
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.item {
+  width: 200px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px 0px #00000040;
+  cursor: pointer;
+  padding: 10px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item:focus,
+.item:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) inset;
+}
