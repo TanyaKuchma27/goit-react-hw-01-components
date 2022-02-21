@@ -1,7 +1,7 @@
 .profile {
   border-radius: 10px;
   background-color: rgb(235, 242, 247);
-  width: 299px;
+  width: 300px;
   margin: 10px auto;
   cursor: pointer;
   box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
@@ -52,13 +52,15 @@
 }
 
 .item {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 97px;
+  width: calc(100% / 3);
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   border: 1px solid #e0caca;
+  border-radius: 7px;
 }
 
 .label {
