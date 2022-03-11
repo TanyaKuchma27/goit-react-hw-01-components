@@ -6,9 +6,7 @@ const Profile = ({
     tag,
     location,
     avatar,
-    followers,
-    views,
-    likes,
+    stats
 }) => {
     return (
     <div className={s.profile}>
@@ -22,15 +20,15 @@ const Profile = ({
         <ul className={s.stats}>
             <li className={s.item}>
             <span className={s.label}>Followers</span>
-            <span className={s.quantity}>{followers}</span>
+            <span className={s.quantity}>{stats.followers}</span>
             </li>
             <li className={s.item}>
             <span className={s.label}>Views</span>
-            <span className={s.quantity}>{views}</span>
+            <span className={s.quantity}>{stats.views}</span>
             </li>
             <li className={s.item}>
             <span className={s.label}>Likes</span>
-            <span className={s.quantity}>{likes}</span>
+            <span className={s.quantity}>{stats.likes}</span>
             </li>
         </ul>
     </div> 
